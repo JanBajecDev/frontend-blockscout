@@ -27,7 +27,7 @@ import AddressLogs from 'ui/address/AddressLogs';
 import AddressMud from 'ui/address/AddressMud';
 import AddressTokens from 'ui/address/AddressTokens';
 import AddressTokenTransfers from 'ui/address/AddressTokenTransfers';
-import AddressTxs from 'ui/address/AddressTxs';
+// import AddressTxs from 'ui/address/AddressTxs';
 import AddressUserOps from 'ui/address/AddressUserOps';
 import AddressWithdrawals from 'ui/address/AddressWithdrawals';
 import AddressFavoriteButton from 'ui/address/details/AddressFavoriteButton';
@@ -142,12 +142,12 @@ const AddressPageContent = () => {
         count: mudTablesCountQuery.data,
         component: <AddressMud scrollRef={ tabsScrollRef } shouldRender={ !isTabsLoading } isQueryEnabled={ areQueriesEnabled }/>,
       },
-      {
-        id: 'txs',
-        title: 'Transactions',
-        count: addressTabsCountersQuery.data?.transactions_count,
-        component: <AddressTxs scrollRef={ tabsScrollRef } shouldRender={ !isTabsLoading } isQueryEnabled={ areQueriesEnabled }/>,
-      },
+      // {
+      //   id: 'txs',
+      //   title: 'Transactions',
+      //   count: addressTabsCountersQuery.data?.transactions_count,
+      //   component: <AddressTxs scrollRef={ tabsScrollRef } shouldRender={ !isTabsLoading } isQueryEnabled={ areQueriesEnabled }/>,
+      // },
       txInterpretation.isEnabled && txInterpretation.provider === 'noves' ?
         {
           id: 'account_history',

@@ -232,12 +232,12 @@ export default function useNavItems(): ReturnType {
         isActive: blockchainNavItems.flat().some(item => isInternalItem(item) && item.isActive),
         subItems: blockchainNavItems,
       },
-      {
-        text: 'Tokens',
-        nextRoute: { pathname: '/tokens' as const },
-        icon: 'token',
-        isActive: pathname.startsWith('/token'),
-      },
+      // {
+      //   text: 'Tokens',
+      //   nextRoute: { pathname: '/tokens' as const },
+      //   icon: 'token',
+      //   isActive: pathname.startsWith('/token'),
+      // },
       config.features.marketplace.isEnabled ? {
         text: 'DApps',
         nextRoute: { pathname: '/apps' as const },

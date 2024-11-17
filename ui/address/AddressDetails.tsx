@@ -17,7 +17,7 @@ import AddressEntity from 'ui/shared/entities/address/AddressEntity';
 import BlockEntity from 'ui/shared/entities/block/BlockEntity';
 import TxEntity from 'ui/shared/entities/tx/TxEntity';
 
-import AddressBalance from './details/AddressBalance';
+// import AddressBalance from './details/AddressBalance';
 import AddressImplementations from './details/AddressImplementations';
 import AddressNameInfo from './details/AddressNameInfo';
 import AddressNetWorth from './details/AddressNetWorth';
@@ -118,7 +118,7 @@ const AddressDetails = ({ addressQuery, scrollRef }: Props) => {
           />
         ) }
 
-        <AddressBalance data={ data } isLoading={ addressQuery.isPlaceholderData }/>
+        {/*<AddressBalance data={ data } isLoading={ addressQuery.isPlaceholderData }/>*/}
 
         { data.has_tokens && (
           <>
