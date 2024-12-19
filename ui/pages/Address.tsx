@@ -190,11 +190,11 @@ const AddressPageContent = () => {
         count: addressTabsCountersQuery.data?.internal_txs_count,
         component: <AddressInternalTxs scrollRef={ tabsScrollRef } shouldRender={ !isTabsLoading } isQueryEnabled={ areQueriesEnabled }/>,
       },
-      {
-        id: 'coin_balance_history',
-        title: 'Coin balance history',
-        component: <AddressCoinBalance shouldRender={ !isTabsLoading } isQueryEnabled={ areQueriesEnabled }/>,
-      },
+      // {
+      //   id: 'coin_balance_history',
+      //   title: 'Coin balance history',
+      //   component: <AddressCoinBalance shouldRender={ !isTabsLoading } isQueryEnabled={ areQueriesEnabled }/>,
+      // },
       addressTabsCountersQuery.data?.validations_count ?
         {
           id: 'blocks_validated',
